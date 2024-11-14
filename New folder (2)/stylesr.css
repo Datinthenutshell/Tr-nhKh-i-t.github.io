@@ -1,0 +1,142 @@
+
+.fish-tank 
+{
+    width: 1885px;
+    height: 890px;
+    background: url("333.png") no-repeat center center;
+    background-size: cover;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    border: 5px solid #0099cc;
+}
+
+
+.fish1 
+{
+    width: 200px;
+    position: absolute;
+    bottom: 150px;
+    animation: swim 12s linear infinite;
+}
+
+.fish2 
+{
+    width: 200px;
+    position: absolute;
+    bottom: 400px;
+    animation: swim 9s linear infinite;
+}
+
+
+.fishxam 
+{
+    width: 200px;
+    left: 170px;
+    position: absolute;
+    bottom: 0px;
+
+}
+.gold 
+{
+    width: 245px;
+    right: 30px;
+    position: absolute;
+    bottom: -3px;
+}
+.gold2 
+{
+    width: 245px;
+    right: 10px;
+    position: absolute;
+    bottom: -3px;
+}
+.gold3 
+{
+    width: 245px;
+    right: 150px;
+    position: absolute;
+    bottom: -3px;
+}
+.chest 
+{
+    width: 200px;
+    right: 90px;
+    position: absolute;
+    bottom: 0px;
+}
+
+
+.rong {
+    width: 400px;
+    position: absolute;
+    bottom: -120px;
+}
+
+
+
+
+
+@keyframes swim {
+    0% {
+        right: -100px;
+        transform: scaleX(1); 
+    }
+    49.9% {
+        right: calc(100% + 100px); 
+        transform: scaleX(1); 
+    }
+    50% {
+        transform: scaleX(-1); 
+    }
+    100% {
+        right: -200px;
+        transform: scaleX(-1); 
+    }
+}
+@keyframes swim2 {
+    0% {
+        left: -100px;
+        transform: scaleX(1); 
+    }
+    49.9% {
+        left: calc(100% + 100px); 
+        transform: scaleX(1); 
+    }
+    50% {
+        transform: scaleX(-1); 
+    }
+    100% {
+        left: -200px;
+        transform: scaleX(-1); 
+    }
+}
+
+
+.nemo 
+{
+    width: 200px;
+    position: absolute;
+    bottom: 100px;
+    animation: swim2 14s linear infinite; 
+    
+    
+}
+
+.fish3 
+{
+    width: 200px;
+    position: absolute;
+    bottom: 700px;
+    animation: swim2 11s linear infinite; 
+    
+    
+}
+.ship
+{
+    width: 800px;
+    right: -400px;
+    position: absolute;
+    bottom: -50px;
+    
+}

@@ -1,0 +1,29 @@
+.Đạt
+{
+        width: 210px;
+        height: 210px;
+        border-radius: 50%;
+        object-fit: cover;
+        right: 30%;
+        position: absolute;
+}
+.LTK
+{
+        width: 210px;
+        height: 210px;
+        position: absolute;
+}
+.tt
+{
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        left: 0%;
+}
+.tt2
+{
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        right: 0%;
+}

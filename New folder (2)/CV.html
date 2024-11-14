@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles6.css">
+    <title>CV của Trịnh Khải Đạt</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            max-width: 900px;
+            margin: auto;
+            background: #ffef97;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            text-align: center;
+            padding: 20px;
+            background: #ac6bf6;
+            color: #fff;
+        }
+        .header h1 {
+            margin: 0;
+        }
+        .section {
+            display: none;
+        }
+        .section.active {
+            display: block;
+            margin-top: 20px;
+        }
+        .main-menu {
+            background-color: #200990;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            cursor: pointer;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        .dropdown-menu {
+            display: none;
+            background-color: #f0f0f0;
+            text-align: center;
+            padding: 10px 0;
+            border-top: 2px solid #ddd;
+        }
+        .dropdown-menu a {
+            display: block;
+            padding: 10px;
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .dropdown-menu a:hover {
+            background-color: #3498db;
+            color: white;
+        }
+        h2 {
+            color: #3498db;
+        }
+    </style>
+    <script>
+        function toggleDropdown() {
+            const dropdownMenu = document.getElementById("dropdown-menu");
+            dropdownMenu.style.display = dropdownMenu.style.display === "block" ? "none" : "block";
+        }
+
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('.section');
+            const menuItems = document.querySelectorAll('.dropdown-menu a');
+
+            // Ẩn tất cả các phần
+            sections.forEach(section => section.classList.remove('active'));
+            // Bỏ đánh dấu tất cả các menu
+            menuItems.forEach(item => item.classList.remove('active'));
+
+            // Hiển thị phần được chọn
+            document.getElementById(sectionId).classList.add('active');
+            toggleDropdown();
+        }
+    </script>
+</head>
+<body onload="showSection('info')">
+
+<div class="container">
+    <!-- Thông tin cá nhân ở phần trên -->
+    <div class="header">
+        <h1>Trịnh Khải Đạt</h1>
+        <p>Sinh viên Trường Đại học Sư phạm Thành phố Hồ Chí Minh</p>
+        <p>Email: trinhkhaidat2006@gmail.com | Điện thoại: 0866112006</p>
+        <p>MSSV:50.01.103.011</p>
+        <p>Xin chào các bạn, đây là trang web của Trịnh Khải Đạt - tân sinh viên Trường đại học Sư phạm thành phố Hồ Chí Minh</p>
+        <img src="44/kurukuru.gif" alt="herta" class="herta" width="300" height="200">
+        
+    </div>
+    <div class="main-menu" onclick="toggleDropdown()">Menu</div>
+
+    <div id="dropdown-menu" class="dropdown-menu">
+        <a href="javascript:void(0)" onclick="showSection('info')">Thông Tin Cá Nhân</a>
+        <a href="javascript:void(0)" onclick="showSection('education')">Học Vấn</a>
+        <a href="javascript:void(0)" onclick="showSection('skills')">Kỹ Năng</a>
+    </div>
+
+    <!-- Nội dung các phần -->
+    <div id="info" class="section active">
+        <h2>Thông Tin Cá Nhân</h2>
+        <img src="44/Đạt.jpg" alt="Đạt" class="Đạt">
+        <p><strong>Quê quán:</strong> Rạch Giá, Kiên Giang </p>
+        <p><strong>Ngày / tháng / năm sinh:</strong> 07/11/2006</p>
+        <p><strong>Sở thích cá nhân:</strong>origami, game gacha, ngủ</p>
+        <p><strong>Chứng chỉ ngoại ngữ:</strong> IELTS: 5.5 </p> 
+        <p><strong>Chứng chỉ tin học MOS:</strong>  Microsoft Excel </p> 
+        <p><strong>Thể loại sách yêu thích:</strong>  Ngôn tình, kinh dị - trinh thám</p>
+        <p><strong>Tôn giáo:</strong>  Thiên Chúa giáo </p>
+        
+        <h3>các tài khoản mxh:</h3>
+        <p><a href="https://www.instagram.com/trinhkhaidat/" target="_blank">Instagram</a></p>
+        <p><a href="https://www.facebook.com/profile.php?id=100057790492534" target="_blank">facebook</a></p>
+
+
+    </div>
+
+    <div id="education" class="section">
+        <h2>Học Vấn</h2>
+        <p><strong>[Cấp 2]</strong> - Trường THCS Lý Thường Kiệt (2018-2021)</p>
+        <p><a href="http://thcslythuongkietlx.agg.edu.vn/" target="_blank">Web trường cấp 2</a></p>
+        <p > </p>
+        <p><strong>[Cấp 3]</strong> - Trường THPT chuyên Thoại Ngọc hầu (2021-2024)</p>
+        <p><a href="http://thptthoaingochau.edu.vn/" target="_blank">Web trường cấp 3</a></p>
+        <p > </p>
+        <p><strong>[Đại học]</strong> - Trường Đại học Sư phạm thành phố Hồ Chí Minh (ngành sư phạm tin học)</p>
+        <p><a href="https://hcmue.edu.vn/vi/" target="_blank">Web trường đại học</a></p>
+        <p > </p>
+    </div>
+
+    <div id="skills" class="section">
+        <h2>Kỹ Năng</h2>
+        <ul>
+            <li>Origami</li>        
+            <label for="exp"></label>
+        <progress id="exp" value="50" max="100"></progress>50%
+        <p></p>     
+            <li>Cầu lông</li>
+            <label for="exp"></label>
+            <progress id="exp" value="65" max="100"></progress>65%
+            <p></p>
+            <li>C++</li>
+            <label for="exp"></label>
+            <progress id="exp" value="55" max="100"></progress>55%
+            <p></p>
+            <li>HTML & CSS</li>
+            <label for="exp"></label>
+            <progress id="exp" value="60" max="100"></progress>60%
+            <p></p>
+            <li>Tiếng Anh</li>
+            <label for="exp"></label>
+            <progress id="exp" value="55" max="100"></progress>55%
+            <p></p>
+            <li>May mắn</li>
+            <label for="exp"></label>
+            <progress id="exp" value="80" max="100"></progress>80%
+        </ul>
+    </div>
+</div>
+<img src="44/kafka.gif" alt="tt" class="tt">
+<img src="44/kirara.gif" alt="tt2" class="tt2">
+
+</body>
+</html>
